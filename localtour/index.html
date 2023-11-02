@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>withlocals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      color: black;
+      color: white;
+    }
+
+    .container {
+      background: rgb(149, 175, 175);
+      min-height: 900px;
+      width: 100%;
+    }
+
+    .menu {
+      background-color: rgba(0, 0, 0, 0.621);
+      height: 750px;
+     
+      width: 100%;
+      z-index: 99;
+      position: absolute;
+      
+    }
+    a{
+      text-decoration: none;
+    }
+
+    .slider {
+      height: 740px;
+      width: 100%;
+      background-color: blue;
+    }
+
+
+
+
+    /* place  stsrt*/
+    .amit {
+      height: 80vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Raleway", Arial, sans-serif;
+      /* background: #7f9ead; */
+      /* background: black;  */
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
+      padding: 30px 50px;
+      background: #00bfff;
+      cursor: pointer;
+      margin-right: 30px;
+    }
+
+    .card:hover {
+      height: 320px;
+    }
+
+    .imgbox {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-80px);
+      z-index: 99;
+    }
+
+    .img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+      padding: 10px 20px;
+      text-align: center;
+      transform: translateY(-450px);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .card:hover>.content {
+      opacity: 1;
+      transform: translateY(-180px);
+    }
+
+    .content h2 {
+      color:white;
+    }
+
+    /* place end */
+
+    /* gallery start  */
+    .amitaj{
+  width: 96.3%; height: 94%;top: -296px; left: 9px; position: relative; background: rgba(0,0,0,0.6);display: flex; justify-content: center; align-items: center; flex-direction: column; opacity: 0;transition: 0.6s; text-align: center;  
+}
+    .amitaj:hover{
+        opacity: 1;
+    } 
+
+    .amitajL{
+  width: 98%; height: 94%;top: -296px; left: 9px; position: relative; background: rgba(0,0,0,0.6);display: flex; justify-content: center; align-items: center; flex-direction: column; opacity: 0;transition: 0.6s; text-align: center;  
+}
+    .amitajL:hover{
+        opacity: 1;
+    } 
+
+
+    .amitaj1{
+  width: 96.5%; height: 96%;top: -395px; left: 9px; position: relative; background: rgba(0,0,0,0.6);display: flex; justify-content: center; align-items: center; flex-direction: column; opacity: 0;transition: 0.6s; text-align: center;  
+}
+.amitaj1:hover{
+        opacity: 1;
+    }
+
+    /* gallery end  */
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="menu">
+
+      <div style="margin-top: 30px;">
+        <div style="float: left; margin-left: 15%; margin-right: 10px; font-size: 40px; ">
+
+          <i class="fa-solid fa-phone-volume" style="color: #00bfff;"></i>
+        </div>
+        <div style="float: left; ">
+
+          <h3 style=" color: white;  float: left;">For Futher Inquires:</h3>
+          <h2>+91 9554124273</h2>
+        </div>
+        <div>
+          <h1 style="float: left; margin-left: 10.5%; font-size: 45px;">WITH LOCALS</h1>
+        </div>
+      </div>
+      <div style="background-color: white; height: 3px;position: relative; margin-top: 6%;">
+
+      </div>
+
+      <div>
+
+        <div style=" width: 20%; height: 60px; float: left; font-size: 30px; text-align: center; padding-top: 1%;"><i
+            class="fa-brands fa-facebook" style="color: #ffffff;"> <i class="fa-brands fa-instagram"
+              style="color: #ffffff;"></i> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i></div>
+        <div style="width: 50%; height: 60px;  float: left; margin-left: 8%;  ">
+          <ul
+            style="display: flex; justify-content: space-around; font-size: 20px; list-style-type: none; padding-top: 2.5%;">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./aboutus.html">ABOUT US</a></li>
+            <li ><a href="./places.html">PLACES</a></li>
+            <li><a href="./tourguide.html">FIND GUIDE</a></li>
+            <li><a href="./pranavregister.html">REGISTER</a></li>
+            <li><a href="./shivam.html">LOGIN</a></li>
+          </ul>
+
+        </div>
+        <button
+          style="padding: 8px; margin-left: 190px; margin-top: 16px; background-color: #00bfff; color: white; border-radius: 20px; font-size: 20px;  border: none;">
+          <a href="./pranavregister.html">BOOK NOW</a></button>
+
+      </div>
+    </div>
+    <div style="font-size: 30px;width: 100%;  z-index: 99;  position: absolute; margin-top: 20%; text-align: center;">
+      <h1> JOURNEY TO <br>
+        EXPLORE CHITRAKOOT</h1>
+
+      <p style="padding-top: 5px; padding-bottom: 5px;">FEEL THE NATURE AND CULTURE</p>
+
+      <button
+        style="padding: 8px; ; margin-top: 16px; background-color: #00bfff; color: white; border-radius: 20px; font-size: 20px;  border: none;">
+        <a href="./aboutus.html">LEARN MORE</a></button>
+      <button
+        style="padding: 8px; margin-left: 25px; margin-top: 9px; background-color: rgba(240, 248, 255, 0); border: 2px solid rgb(255, 255, 255); color: #ffffff; border-radius: 20px; font-size: 20px;  ">
+        <a href="./pranavregister.html">BOOK NOW</a></button>
+
+    </div>
+
+
+    <div class="slider">
+      <video src="./media/video/Add a heading.mp4" loop muted autoplay="autoplay"
+        style=" z-index: 000; position: absolute; top: 0; left: 0; width: 100%; height: 750px; object-fit: cover;"></video>
+    </div>
+    <div style="background-color: #00bfff; height: 160px; padding-top: 40px;">
+      <div style="background-color: black; margin-top: 20px;">
+        <div style="float: left; margin-left: 170px;">
+          <label for="" style="font-size: 25px; ">Search Destination*</label><br>
+          <input type="text" placeholder="Enter Destination"
+            style="background-color: white; height: 55px; width: 200px; border-radius: 20px; margin-top: 10px; padding-left: 20px; border: none; ">
+
+        </div>
+        <div style="float: left; margin-left: 50px;">
+          <label for="" style="font-size: 25px; ">Pax Number*</label><br>
+          <input type="number" placeholder="No.of People"
+            style="background-color: white; height: 55px; width: 200px; border-radius: 20px; margin-top: 10px; padding-left: 20px;  border: none; ">
+
+        </div>
+        <div style="float: left;margin-left: 50px;">
+          <label for="" style="font-size: 25px; ">Checkin Date*</label><br>
+          <input type="date" placeholder="MM/DD/YY"
+            style="background-color: white ;color: #000; height: 55px; width: 180px; border-radius: 20px; margin-top: 10px; padding-left: 20px; padding-right: 20px;  border: none; ">
+
+        </div>
+        <div style="float: left;margin-left: 50px;">
+          <label for="" style="font-size: 25px; ">Checkout Date*</label><br>
+          <input type="date" placeholder="MM/DD/YY"
+            style="background-color: white; color: #000; height: 55px; width: 180px; border-radius: 20px; margin-top: 10px; padding-left: 20px; padding-right: 20px;  border: none; ">
+
+        </div>
+        <div style="float: left;margin-left: 50px;">
+          <button
+            style="background-color: rgba(255, 255, 255, 0); color: #ffffff; height: 55px; width: 180px; border-radius: 20px; margin-top: 38px; padding-left: 20px; padding-right: 20px;  border: 2px solid white ">INQUIRE
+            NOW</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div style="height: 600px; background-color: rgb(149, 175, 175); padding-top: 10px;">
+      <h1 style="font-size: 3vw; text-align: center; margin-top: 30px; color: #014a63;">POPULAR DESTINATIONS</h1>
+      <!-- placescars start -->
+      <!-- <p style="background-color: rgb(128, 112, 112); min-height: 50px; font-size: 40px; text-align: center; padding-top: 10px;">Enjoy The Beauty<br> Of The World </p> -->
+      <div class="amit">
+
+        <div class="card" style="margin-left: 20px;">
+          <div class="imgbox">
+            <img class="img" src="./media/image/images.jfif" />
+          </div>
+
+          <div class="content">
+            <h2>Ram Ghat</h2><br>
+            <p style="color: rgb(255, 255, 255);">
+              Ram Ghat, which is one of the most popular tourist attractions in Uttar Pradesh,
+               is believed to be the place where Lord Rama, Goddess Sita and Lord Laxman.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="margin-left: 22px;">
+          <div class="imgbox">
+            <img class="img" src="./media/image/475892.jpg" />
+          </div>
+
+          <div class="content">
+            <h2>Gupt Godavari</h2><br>
+            <p style="color: rgb(255, 255, 255);">
+              This is a tiny rivulet which flows into tanks at the end of an underground cave. 
+              The source of this rivulet remains unfathomable. 
+            </p>
+          </div>
+        </div>
+        <div class="card" style="margin-left: 22px;">
+          <div class="imgbox">
+            <img class="img" src="./media/image/waterfall-high-resolution-desktop-wallpaper-preview.jpg" />
+          </div>
+
+          <div class="content">
+            <h2>Shabri waterfall</h2><br>
+            <p style="color: rgb(255, 255, 255);">
+              Shabri waterfall near Chitrakoot Dham, u.p is one of the most beautiful places in Bundelkhand. 
+              Shabri waterfall landscape is filled with water running over rocks, falling down from height with the loud noise.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- placescars end -->
+    </div>
+          
+      <!-- services start  -->
+      <div style="background-color: rgb(149, 175, 175); height: 80px; padding-top: 1px; ">
+        <h1 style="text-align: center; font-size: 3vw; margin-top: 15px; color: #014a63;">OUR SERVICES</h1>
+        
+        </div>
+
+      <div style=" margin-top: 20px; padding-bottom: 20px; background-color: rgb(255, 255, 255); min-height: 380px; width: 87%; margin-left: 6.5%; border: 5px solid #0a6b8b; border-radius: 10px;">
+        
+        <div style="background-color:  #056d8f; height: 128px;padding-top: 1px;">
+        <p style="font-size: 25px; text-align: center; margin-top: 29px; color: #ffffff;">
+        Discover the CHITRAKOOT with withlocals! Our Private tours offer you a unique and <br>
+        personalized experience in any destination.
+        </p>
+        </div>
+        <br>
+        <div style="background-color: rgb(255, 255, 255); height: 260px;">
+        <div style="background-color: #ffffff; height: 250px; width: 20%; float: left; margin-left: 50px;border-radius: 10px; border: 2px solid #00bfff;">
+        <div style="background-color: white;height: 100px; width: 100px; border-radius: 10px; margin: 0px auto;margin-top: 20px;">
+          <img  src="./media/image/handpick.png" width="100%" height="100%"/>
+        </div>
+        <h3 style="text-align: center; margin-top: 30px; color: #00bfff;">HAND PICKED GUIDES</h3>
+        </div>
+        <div style="background-color: #ffffff; height: 250px; width: 20%; float: left; margin-left: 50px;border-radius: 10px; border: 2px solid #00bfff;">
+
+          <div style="background-color:white;height: 100px; width: 100px; border-radius: 10px; margin: 0px auto;margin-top: 20px;">
+            <img  src="./media/image/customerSup.png" width="100%" height="100%"/>
+          </div>
+          <h3 style="text-align: center; margin-top: 30px; color: #00bfff;">24/7 CUSTOMER <br> SUPPORT</h3>
+        </div>
+        <div style="background-color: #ffffff; height: 250px; width: 20%; float: left; margin-left: 50px;border-radius: 10px; border: 2px solid #00bfff;">
+
+          <div style="background-color: white;height: 100px; width: 100px; border-radius: 10px; margin: 0px auto;margin-top: 20px;">
+            <img  src="./media/image/tourCus.webp" width="100%" height="100%"/>
+          </div>
+          <h3 style="text-align: center; margin-top: 30px; color: #00bfff;">EVERY TOUR PRIVATE <br>AND CUSTOMIZABLE</h3>
+
+          
+        </div>
+        <div style="background-color: #ffffff; height: 250px; width: 20%; float: left; margin-left: 50px;border-radius: 10px; border: 2px solid #00bfff;">
+
+          <div style="background-color:white;height: 100px; width: 100px; border-radius: 10px; margin: 0px auto;margin-top: 20px;">
+            <img  src="./media/image/cancel.jfif" width="100%" height="100%" style="border-radius: 50%;"/>
+          </div>
+          <h3 style="text-align: center; margin-top: 30px; color: #00bfff;">FLEXIBLE<br> CANCLATION </h3>
+        </div>
+
+        </div>
+        
+        <!-- <div style="background-color: blue; height: 50px;"></div> -->
+  
+
+      </div>
+      <!-- services end  -->
+
+<!-- about us start  -->
+<div style="background-color: rgb(149, 175, 175); height: 80px; margin-top: 80px;">
+  <h1 style="text-align: center; font-size: 3vw; margin-top: 15px; color: #014a63;">ABOUT US</h1>
+  
+  </div>
+<div style="background-color: #55d155; height: 400px; margin-top: 30px;">
+<div style="background-color: #014a63;height: 400px;width: 40%;float: left;">
+<div style="background-color: aqua; height: 280px; width: 550px; position: relative; top: 60px; left: 325px;">
+<video src="./media/video/Untitled design.mp4" loop muted autoplay="autoplay"style=" z-index: 000; position: absolute; top: 0; left: 0;  width: 100%; height: 280px; object-fit: cover;"></video>
+</div>
+</div>
+<div style="background-color: rgb(149, 175, 175);height: 400px;width: 22%; float: left;"></div>
+<div style="background-color: rgb(149, 175, 175);height: 400px;width: 38%; float: left;">
+<h1 style="font-size: 3vw; color: #014a63;">Learn More<br>
+  About WithLocals</h1>
+  <p style="font-size: 2vw; margin-top: 20px; color: #014a63; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum cum rerum unde, natus obcaecati delectus ipsum. Magnam labore deserunt esse debitis, adipisci distinctio deserunt esse debitis, adipisci distinctio. </p>
+  <button style="padding: 12px; background-color: #014a63;color: white; margin-top: 20px;  width: 150px;"><a href="./aboutus.html">Know More</a></button>
+</div>
+
+
+</div>
+<!-- about us end  -->
+
+
+    <!-- gallery start  -->
+    <div style="background-color: rgb(149, 175, 175); height: 80px; margin-top: 100px;">
+      <h1 style="text-align: center; font-size: 3vw; margin-top: 15px; color: #014a63;">GALLERY</h1>
+      
+      </div>
+    <div class="contect" style="background-color: rgb(149, 175, 175); min-height: 700px; padding: 100px; padding-top: 40px; padding-bottom: 80px;">
+      <div style="background-color: black; height: 700px;width: 100%; ">
+      <div style="background-color: red;height: 300px;">
+         <div  style="background-color: blue; height: 300px; width: 35%;float: left; ">
+        
+        <img  class="image" src="./media/image/5765.jpg" height="282px" width="96.2%" style="background-size: cover; border: 10px solid #00bfff" alt="">
+
+         
+        <h1 class="amitaj" >
+          <pre>
+  GUPT GODAVARI
+           
+<a href="./guptgodavari.html" style="text-decoration: none;"> Click Here To View</a>
+          </pre>
+        </h1>
+        <!-- <button style="padding: 3px; border-radius: 20px; color: white;">VIEW MORE</button> -->
+        </div>
+         <div style="background-color: rgb(0, 255, 217); height: 300px; width: 65%; float: left;">
+          <img src="./media/image/knocksense_2022-12_505f78e9-6204-4f5c-a8f8-ceef3a4485bb_waterfall.jpg" height="282px" width="97.7%" style="background-size: cover; border: 10px solid #00bfff" alt="">
+          <h1 class="amitajL" >
+            <pre>
+  SHABARI WATERFALL
+                       
+<a href="./sabriwaterfall.html" style="text-decoration: none;"> Click Here To View</a>
+                      </pre>
+          </h1>
+        </div>
+
+      </div>
+      <div style="background-color: rgb(255, 242, 0);height: 400px;">
+        <div style="background-color: rgb(255, 191, 0); height: 400px; width: 40%;float: left;">
+          <img src="./media/image/cq5dam.web.480.271.jpeg" height="382px" width="96.5%" style="background-size: cover; border: 10px solid #00bfff" alt="">
+          <h1 class="amitaj1" >
+            <pre>
+ HANUMAN DHARA
+                                   
+ <a href="./HanumanDhara.html" style="text-decoration: none;"> Click Here To View</a>
+                                  </pre>
+          </h1>
+        </div>
+        <div style="background-color: rgb(136, 0, 255); height: 400px; width: 25%;float: left;">
+          <img src="./media/image/EgpP6IyVgAAER1A.jpg" height="382px" width="95.8%" style="background-size: cover; border: 10px solid #00bfff;" alt="">
+          <h1 class="amitaj1" >
+            <pre>
+ RAM GHAT
+                       
+ <a href="./ramghat.html" style="text-decoration: none;"> Click Here To View</a>
+                      </pre>
+          </h1>
+        </div>
+
+        <div style="background-color: rgb(255, 0, 191); height: 400px; width: 35%;float: left;">
+          <img src="./media/image/6c2b6989a4aef5597ebe4ab16289c9d3.webp" height="382px" width="95.8%" style="background-size: cover; border: 10px solid #00bfff" alt="">
+          <h1 class="amitaj1" >
+            <pre>
+ KAMADGIRI TEMPLE
+                                    
+<a href="./kamtanath.html" style="text-decoration: none;"> Click Here To View</a>
+                                   </pre>
+          </h1>
+        </div>
+
+
+      </div>
+      </div>
+      </div>
+
+    <!-- gallery end  -->
+
+
+          <!-- footer start  -->
+    <div class="foter" style="background-color: #045c7a; height: 660px;">
+      <div style="background-color: #045c7a; height: 330px;">
+        <div style="background-color: #045c7a;height: 330px; width: 23%; margin-left: 10%; float: left;">
+          <h1 style="font-size: 35px; margin-top: 30px; margin-left: 50px;">WITH LOCALS</h1>
+          <p style="font-size: 20px; margin-top: 20px; margin-left: 30px;">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Sequi adipisci, ut eum repudiandae officia tempore expedita, vitae fuga praesentium illo,
+            corporis nostrum excepturi? Nihil voluptatem, veritatis praesentium iusto ut qui.</p>
+        </div>
+        <div style="background-color: #045c7a;height: 330px; width: 20%;  float: left;">
+          <h2 style="margin-top: 10px; margin-left: 10px;">RECENT POST</h2>
+          <div style="background-color: #00bfff; height: 4px; width: 40%; margin-top: 10px; margin-left: 10px;"> </div>
+
+          <div style="background-color: #045c7a;height: 100px; margin-top: 30px; padding-top: 5px;">
+            <div
+              style="background-color: #045c7a;height: 75px; width: 30%; margin-top: 8px; margin-left: 20px; border-radius: 10px; float: left; ">
+              <img src="./media/image/EgpP6IyVgAAER1A.jpg" height="100%" width="100%"
+                style="border-radius: 10px;" alt="">
+            </div>
+            <div style="float: left;  width: 60%; margin-top: 10px; margin-left: 10px;">
+              <h4>BEST JOURNEY TO PEACEFUL PLACE </h4>
+              <h5 style="margin-top: 5px;">February 17, 2022</h5>
+            </div>
+          </div>
+          <div style="background-color: #045c7a;height: 100px; margin-top: 6px; padding-top: 5px;">
+            <div
+              style="background-color: blue;height: 75px; width: 30%; margin-top: 8px; margin-left: 20px; border-radius: 10px; float: left; ">
+              <img src="./media/image/maxresdefault (1).jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+            <div style="float: left;  width: 60%; margin-top: 10px; margin-left: 10px;">
+              <h4>TRAVEL WITH FRIENDS IS BEST</h4>
+              <h5 style="margin-top: 5px;">February 17, 2022</h5>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: #045c7a;height: 330px; width: 22%; float: left;">
+          <h2 style="margin-top: 10px; margin-left: 10px;">CONTACT US </h2>
+          <div style="background-color: #00bfff; height: 4px; width: 40%; margin-top: 10px; margin-left: 10px;"></div>
+          <div style="margin-top: 33px; padding-left: 15px; background-color: #045c7a">
+            <h2>Feel free to contact and <br> reach us !!</h2>
+
+            <h3 style="margin-top: 30px;"><i class="fa-solid fa-phone"
+                style="color: #ffffff; margin-right: 6px; margin-left: 5px;"></i> +01(988) 256 203 </h3>
+
+            <h3 style="margin-top: 18px;"> <i class="fa-regular fa-envelope"
+                style="color: #ffffff;  margin-right: 6px; margin-left: 5px;"></i> info@domain.com</h3>
+            <h3 style="margin-top: 18px;"><i class="fa-solid fa-location-dot"
+                style="color: #ffffff;  margin-right: 6px; margin-left: 5px;"></i> 3146 Koontz, California</h3>
+          </div>
+        </div>
+        <div style="background-color: #045c7a;height: 330px; width: 25%; float: left;">
+          <h2 style="margin-top: 10px; margin-left: 10px;">GALLERY</h2>
+          <div style="background-color: #00bfff; height: 4px; width: 28%; margin-top: 10px; margin-left: 10px;"></div>
+          <div style="background-color: #045c7a;height: 100px; margin-top: 20px; padding-top: 5px;">
+            <div
+              style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+              <img src="./media/image/-1554909321.jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+            <div
+              style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+              <img src="./media/image/475892.jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+            <div
+              style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+              <img src="./media/image/cq5dam.web.480.271.jpeg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+
+          </div>
+          <div style="background-color: #045c7a;height: 100px; margin-top: 10px; padding-top: 5px;">
+            <div
+              style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+              <img src="./media/image/EgpP6IyVgAAER1A.jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+            <div
+              style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+              <img src="./media/image/knocksense_2022-12_505f78e9-6204-4f5c-a8f8-ceef3a4485bb_waterfall.jpg" height="100%"
+                width="100%" style="border-radius: 10px;" alt="">
+            </div>
+            <div
+              style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+              <img src="./media/image/pexels-photo-450441.jpeg" height="100%" width="100%" style="border-radius: 10px;"
+                alt="">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <hr style="margin-left: 11%;">
+      <div style="background-color: #045c7a; height: 230px;">
+        <div style="background-color: #045c7a;height: 230px; width: 55%; margin-left: 10%; float: left;">
+          <h2 style="margin-left: 23px; margin-top: 30px; font-size: 22px;">Subscribe our newsletter for more update &
+            news !!</h2>
+          <input type="text" placeholder="Enter Your Email"
+            style="height: 70px; font-size: 18px; padding-left: 40px; background-color: white; width: 55%; margin-left: 20px; margin-top: 20px; border-radius: 30px; border: none; ">
+          <button
+            style="padding: 25PX; background-color: rgba(255, 255, 255, 0); color: white; border: 2px solid white; border-radius: 30px; width: 20%; margin-left: 25px;">SUBSCRIBE</button>
+        </div>
+        <div style="background-color: #045c7a;height: 230px; width: 35%;  float: left;">
+
+          <div style="height: 70px; background-color: #045c7a; float: right; width: 60%; margin-top: 50px;">
+            <div>
+              <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff; margin-left: 30px; "></i>
+              <i class="fa-brands fa-twitter fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+              <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+              <i class="fa-brands fa-youtube fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+              <i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+            </div>
+
+            <div style="font-size: 20px; margin-top: 10px;">
+              <h5 style="float: left;">Privacy Policy | &nbsp; </h5>
+              <h5 style="float: left;">Term & Condition | &nbsp;</h5>
+              <h5 style="float: left;">FAQ</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div style="background-color: #014a63; height: 70px; padding-top: 30px;">
+        <h2 style="text-align: center; margin-top: 10px;">Copyright © 2023 with locals. All rights reserved.</h2>
+      </div>
+
+
+    </div>
+
+    <!-- footer end  -->
+
+  </div>
+</body>
+
+</html>

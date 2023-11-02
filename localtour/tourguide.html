@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         * {
+      margin: 0px;
+      padding: 0px;
+      /* color: black; */
+      /* color: white; */
+    }
+
+    .container {
+      background: white;
+      min-height: 900px;
+      width: 100%;
+    }
+    .menu {
+      background-color:  rgba(0, 0, 0, 0.267);
+      height: 150px;
+     color: white;
+     text-decoration: none;
+      width: 100%;
+      z-index: 99;
+      position: absolute;
+      
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+#container{
+    /* position: sticky; */
+    width:100%;
+
+    height:3000px ;
+    background:  rgb(149, 175, 175);
+    /* position:relative; */
+}
+
+#menu{
+    width:100%;
+    height:80px ;
+    background:navy;
+}
+
+#main{
+    background-image: url(./media/image/hn.jpg);
+    background-size: cover;
+    width:100% ;
+    height:620px ;
+    /*background: yellow;*/
+  
+ display: flex;     
+   
+   }
+#mainL{
+    width:100% ;
+    height:620px ;
+    background:navy;
+    opacity: 0.3;
+    text-align: center;
+    color: white; 
+}
+
+#mid{
+    width:100% ;
+    height:200px ;
+   /* background: lightsalmon;*/
+}
+#main2{
+    width:100%;
+    height:1500px ;
+    /*background: magenta;*/
+}
+#main2hori1{
+    height: 187.5px;
+    width: 100%;
+    
+   
+}
+#main2vert1{
+    height: 187.5px;
+    width: 48%;
+  box-shadow: 1px 1px 1px 1px  grey;
+    float: left;
+   
+   
+}
+#main2vert2{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+    float: right;
+   
+}
+
+
+#main2hori2{
+    height: 187.5px;
+    width: 100%;
+    
+   
+}
+#main2vert3{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+    float: left;
+   
+   
+}
+#main2vert4{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+    float: right;
+   
+}
+#main2hori3{
+    height: 187.5px;
+    width: 100%;
+   
+   
+}
+#main2vert5{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+    float: left;
+   
+   
+}
+#main2vert6{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+    float: right;
+   
+}
+#main2hori4{
+    height: 187.5px;
+    width: 100%;
+    
+   
+}
+#main2vert7{
+    height: 187.5px;
+    width: 48%;
+   
+    float: left;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+   
+}
+#main2vert8{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+   
+    float: right;
+   
+}
+#main2hori5{
+    height: 187.5px;
+    width: 100%;
+    
+   
+}
+#main2vert9{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+    float: left;
+   
+   
+}
+#main2vert10{
+    height: 187.5px;
+    width: 48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+    float: right;
+   
+}
+#main2hori6{
+    height: 187.5px;
+    width: 100%;
+    
+}
+#main2vert11{
+    height: 187.5px;
+    width:48%;
+    box-shadow: 1px 1px 1px 1px  grey;
+     
+    float: left;
+   
+   
+}
+#main2vert12{
+    height: 187.5px;
+    width: 48%;
+    
+    box-shadow: 1px 1px 1px 1px  grey;
+   
+    float: right;
+   
+}
+#horii6{
+    width: 100%;
+    height:562.5px ;
+    /* margin-left: 60px;    */
+}
+
+#save{
+    width:100%;
+    height:300px ;
+    background:orange;
+}
+#footer{
+    width:100%;
+    height:450px ;
+    background-image:url(./media/image/wf.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgb(5,5,74);
+        color: white;
+   }
+
+.f1{
+    width:229px ;
+    height:400px ;
+   float: left;
+   margin-left: 100px;
+
+     }
+.f2{
+    width:229px ;
+    height:400px ;
+    float: left;
+    margin-left: 40px;
+}
+
+.f3{
+    width:229px ;
+    height:400px ;
+    float: left;
+    margin-left: 40px;
+
+     
+}
+.f4{
+    width:229px ;
+    height:400px ;
+     float: left;
+     margin-left: 40px;
+
+     }
+.f5{
+    width:229px ;
+    height:400px ;
+   /* border: 1px solid black;*/
+    float: left;
+    margin-left: 40px;
+   
+}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- menu start  -->
+        <div class="menu">
+
+            <div style="margin-top: 30px;">
+              <div style="float: left; margin-left: 15%; margin-right: 10px; font-size: 40px; ">
+      
+                <i class="fa-solid fa-phone-volume" style="color: #00bfff;"></i>
+              </div>
+              <div style="float: left; ">
+      
+                <h3 style=" color: white;  float: left;">For Futher Inquires:</h3>
+                <h2>+91 9554124273</h2>
+              </div>
+              <div>
+                <h1 style="float: left; margin-left: 10%; font-size: 45px;">WITH LOCALS</h1>
+              </div>
+            </div>
+            <div style="background-color: white; height: 3px;position: relative; margin-top: 6%;">
+      
+            </div>
+      
+            <div>
+      
+              <div style=" width: 20%; height: 60px; float: left; font-size: 30px; text-align: center; padding-top: 1%;"><i
+                  class="fa-brands fa-facebook" style="color: #ffffff;"> <i class="fa-brands fa-instagram"
+                    style="color: #ffffff;"></i> <i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i></div>
+              <div style="width: 50%; height: 60px;  float: left; margin-left: 8%;  ">
+                <ul
+                style="display: flex; justify-content: space-around; font-size: 20px; list-style-type: none; padding-top: 2.5%;">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./aboutus.html">ABOUT US</a></li>
+                <li ><a href="./places.html">PLACES</a></li>
+                <li><a href="./tourguide.html">FIND GUIDE</a></li>
+                <li><a href="./pranavregister.html">REGISTER</a></li>
+                <li><a href="./shivam.html">LOGIN</a></li>
+              </ul>
+      
+              </div>
+              <button
+                style="padding: 8px; margin-left: 180px; margin-top: 10px; background-color: #00bfff; color: white; border-radius: 20px; font-size: 20px;  border: none;">BOOK
+                NOW</button>
+      
+            </div>
+          </div>
+          <!-- menu end  -->
+
+
+          <!-- shweta code  -->
+          
+          <div id="container">
+            <div id="menu"></div>
+            <div id="main"><br><br><br><br>
+               <div id="mainL"><br><br><br><br><br>
+                    <span style="font-weight: 900;font-size: 5vw;">FIND A LOCAL <br></span><br>
+                    <span style="font-weight: 600;font-size: 2vw;margin-right: 70px;">TO SHOW YOU AROUND <br><br></span><br><br><br>
+                    <input type="text" placeholder="search" style="width: 90px;height: 50px;"><br>
+                   
+                </div>
+            </div>
+            <div id="mid"><br>
+                <h2 style="color:black;text-align: center;">Find Your Local Tour Guide With <span style="color: maroon;">Chitrakootyatra.com</span></h2>
+            
+            <div id="main2">
+        <div id="main2hori1">
+            <div id="main2vert1"><br>
+                <img src="./media/image/img8.jpg" alt="" style="height: 160px;width: 195px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Kirti (Karwi)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"Can take you all the places where you want to visit
+                     <br>also can plan accordingly your."</p>
+            </div>
+            <div id="main2vert2"><br>
+                <img src="./media/image/im10.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Saumya Sachan (Chitrakoot)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"Can take you all the lost places where you want to visit
+                     <br>also can provide you best fooding places."</p>
+            </div>
+        </div>
+        <div id="main2hori2">
+            <div id="main2vert3"><br>
+                <img src="./media/image/im7.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;;">
+                <h4 style="padding-left: 40px;">&ensp;Sarthak Singh Chauhan (Tendhi Puliya)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">" I Can help you to explore adventures places of the chitrakoot
+                     <br>also I can help you to tell you the cost friendly trip."</p>
+            </div>
+            <div id="main2vert4"><br>
+                <img src="./media/image/im4.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Parth Dubey (Near Karwi Station)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">" I can help you to find out parks and hotels and
+                     <br>also I can help you to take discounts."</p>
+            </div>
+        </div>
+        <div id="main2hori3">
+            <div id="main2vert5"><br>
+                <img src="./media/image/im3.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp; Yathart Sharma(Chitrakoot)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">" I Can take you to the local places having interesting stories
+                     <br>also can plan accordingly your."</p>
+            </div>
+            <div id="main2vert6"><br>
+                <img src="./media/image/im16.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Prabal (Near Ramghat)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"I will make you a pilgrimage here...
+                     <br>I am sure that you will gonna enjoy it."</p>
+            </div>
+        </div>
+        <div id="main2hori4">
+            <div id="main2vert7"><br>
+                <img src="./media/image/im12.avif" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Luxmi Singh Tomar (Karwi)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"I will show you the best natural vegetation of the city,
+                     <br>if you are anture love so please dont't miss the chance."</p>
+            </div>
+            <div id="main2vert8"><br>
+                <img src="./media/image/im13.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Parneeti (Chitrakoot)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"If you ove shopping during your trips. I will show 
+                     <br>you the best places of shopping with affordable price."</p>
+            </div>
+        </div>
+        <div id="main2hori5">
+            <div id="main2vert9"><br>
+                <img src="./media/image/im1.png" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Dharmendra Pathak (Karwi)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">" If you are writer and your passion is to write travelogue,
+                     <br>I will show you the diffrent places with their interesting stories."</p>
+            </div>
+            <div id="main2vert10"><br>
+                <img src="./media/image/im10.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Kavya (Karwi)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"I love to give direction to the
+                     <br>people, so voluntarily I guiding others."</p>
+            </div>
+        </div>
+        <div id="main2hori5">
+            <div id="main2vert11"><br>
+                <img src="./media/image/im14.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;">
+                <h4 style="padding-left: 40px;">&ensp;Rhul Saini (Tendhi Puliya)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"I will show you the best places to click photographs 
+                     <br>and also I will show you the affordable hotels."</p>
+            </div>
+            <div id="main2vert12"><br>
+                <img src="./media/image/im15.jpg" alt="" style="height: 160px;width: 170px;float: left;margin-left: 30px;>
+                <h4 style="padding-left: 40px;">&ensp;Prakash Asthana (Chitrakoot)</h4>
+                <p style="float: left;margin-left: 20px;margin-top: 30px;">"Welcome to my place. I will show you the beauty of my city
+                     <br>where our Shree Ram spent a long years of his life."</p>
+            </div>
+        </div><br><br><br><br>
+        <div id="horii6" >
+        <h1 style="color: white;font-size: 2vw;font-weight: 800; background-color: navy;text-align: center;">CHITRAKOOTYATRA.COM : More Than Just Your Average City Tour</h1><br><br><br>
+        <p style="margin-left: 40px;font-size: 20px;color: maroon;text-align: center;">There's no better way to feel the heart of a city than discovering it with a knowledgeable local by your side who has 
+            similar<br><br>  interests to yours.Whether you want the focus of your visit to be on art, food, nightlife,sightseeing,<br><br> or
+            culture, now you can customize a city tour with 
+         a Chitrakootyatra local wherever you next destination.
+        </p>
+        </div>
+            </div>
+            <div id="save"><br>
+                <h1 style="margin-left: 200px;color: white;font-size: 2vw;font-weight: 800;">SAVE A TIME: CREATE A TRIP & GET OFFERS FROM LOCALS</h1><br><br>
+                <img src="./media/image/NUM1-removebg-preview (1).png" alt="" style="height: 80px;width: 80px;float: left;margin-left: 30px;"><br>
+                <p style="margin-left: 30px;font-size: 20px;font-weight:500;color: white;">Create a trip</p><br>
+                <img src="./media/image/NUM2-removebg-preview.png" alt="" style="height: 80px;width: 80px;float: left;margin-left: 30px;"><br>
+                <p style="margin-left: 30px;font-size: 20px;font-weight:500;color: white;">Get Offers from locals</p><br>
+                <img src="./media/image/NUM3-removebg-preview.png" alt="" style="height: 80px;width: 80px;float: left;margin-left: 30px;"><br>
+                <p style="margin-left: 30px;font-size: 20px;font-weight:500;color: white;">Pick the one you like</p><br><br>
+                <button style="height: 50px;width: 120px;background: blue;color: white;margin-left: 400px;margin-bottom:60px;font-size:  2vh;font-weight: 500;">Create a Trip</button>
+                
+                
+                
+            </div>
+            <div id="footer">
+                <div class="f1"><br><br><br><br><br><br>
+                    <h2>chitrakootyatra.com</h2><br>
+                <p>Discover a city wih a local</p><br>
+                <img src="./media/image/imglogo-removebg-preview.png" alt="" style="height: 100px;width: 90px;float: left;">
+                
+               
+                </div>
+                <div class="f2"><br><br><br><br><br><br>
+                    <h2>GETTING STARTED</h2><br><br>
+                   <span>About Us</span><br><br>
+                   <span>Sign Up As A Local</span><br><br>
+                   <span>Android App</span><br><br>
+                </div>
+                <div class="f3"><br><br><br><br><br><br>
+                    <h2>RESOURCES</h2><br><br>
+                    <span>Booking Advice</span><br><br>
+                    <span>Advice for Locals</span><br><br>
+                    <span>Reviews & Ratings</span><br><br>
+                </div>
+                <div class="f4"><br><br><br><br><br><br>
+                    <h2>Terms Of Services</h2><br><br>
+                    <span>Privacy Policy</span><br><br>
+                    <span>Security</span><br><br>
+                    <span>Availibility</span><br>
+                </div>
+                <div class="f5"><br><br><br><br><br><br>
+                    <h2>Rules And Regulations</h2><br><br>
+                    <span>Pay Per Use</span><br><br>
+                    <span>Reasonable Charges</span><br><br>
+                    <span>Time Saving</span><br><br>
+                </div>
+            </div>
+        
+          </div> 
+          </div>
+            <!-- shweta end  -->
+
+            <!-- footer start  -->
+    <!-- <div class="foter" style="background-color: #045c7a; height: 660px;">
+        <div style="background-color: #045c7a; height: 330px;">
+          <div style="background-color: #045c7a;height: 330px; width: 23%; margin-left: 10%; float: left;">
+            <h1 style="font-size: 35px; margin-top: 30px; margin-left: 50px;">WITH LOCALS</h1>
+            <p style="font-size: 20px; margin-top: 20px; margin-left: 30px;">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Sequi adipisci, ut eum repudiandae officia tempore expedita, vitae fuga praesentium illo,
+              corporis nostrum excepturi? Nihil voluptatem, veritatis praesentium iusto ut qui.</p>
+          </div>
+          <div style="background-color: #045c7a;height: 330px; width: 20%;  float: left;">
+            <h2 style="margin-top: 10px; margin-left: 10px;">RECENT POST</h2>
+            <div style="background-color: #00bfff; height: 4px; width: 40%; margin-top: 10px; margin-left: 10px;"> </div>
+  
+            <div style="background-color: #045c7a;height: 100px; margin-top: 30px; padding-top: 5px;">
+              <div
+                style="background-color: #045c7a;height: 75px; width: 30%; margin-top: 8px; margin-left: 20px; border-radius: 10px; float: left; ">
+                <img src="./waterfall-high-resolution-desktop-wallpaper-preview.jpg" height="100%" width="100%"
+                  style="border-radius: 10px;" alt="">
+              </div>
+              <div style="float: left;  width: 60%; margin-top: 10px; margin-left: 10px;">
+                <h4>BEST JOURNEY TO PEACEFUL PLACE </h4>
+                <h5 style="margin-top: 5px;">February 17, 2022</h5>
+              </div>
+            </div>
+            <div style="background-color: #045c7a;height: 100px; margin-top: 6px; padding-top: 5px;">
+              <div
+                style="background-color: blue;height: 75px; width: 30%; margin-top: 8px; margin-left: 20px; border-radius: 10px; float: left; ">
+                <img src="./media/maxresdefault (1).jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+              </div>
+              <div style="float: left;  width: 60%; margin-top: 10px; margin-left: 10px;">
+                <h4>TRAVEL WITH FRIENDS IS BEST</h4>
+                <h5 style="margin-top: 5px;">February 17, 2022</h5>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: #045c7a;height: 330px; width: 22%; float: left;">
+            <h2 style="margin-top: 10px; margin-left: 10px;">CONTACT US </h2>
+            <div style="background-color: #00bfff; height: 4px; width: 40%; margin-top: 10px; margin-left: 10px;"></div>
+            <div style="margin-top: 33px; padding-left: 15px; background-color: #045c7a">
+              <h2>Feel free to contact and <br> reach us !!</h2>
+  
+              <h3 style="margin-top: 30px;"><i class="fa-solid fa-phone"
+                  style="color: #ffffff; margin-right: 6px; margin-left: 5px;"></i> +01(988) 256 203 </h3>
+  
+              <h3 style="margin-top: 18px;"> <i class="fa-regular fa-envelope"
+                  style="color: #ffffff;  margin-right: 6px; margin-left: 5px;"></i> info@domain.com</h3>
+              <h3 style="margin-top: 18px;"><i class="fa-solid fa-location-dot"
+                  style="color: #ffffff;  margin-right: 6px; margin-left: 5px;"></i> 3146 Koontz, California</h3>
+            </div>
+          </div>
+          <div style="background-color: #045c7a;height: 330px; width: 25%; float: left;">
+            <h2 style="margin-top: 10px; margin-left: 10px;">GALLERY</h2>
+            <div style="background-color: #00bfff; height: 4px; width: 28%; margin-top: 10px; margin-left: 10px;"></div>
+            <div style="background-color: #045c7a;height: 100px; margin-top: 20px; padding-top: 5px;">
+              <div
+                style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+                <img src="./media/-1554909321.jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+              </div>
+              <div
+                style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+                <img src="./media/475892.jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+              </div>
+              <div
+                style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+                <img src="./media/cq5dam.web.480.271.jpeg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+              </div>
+  
+            </div>
+            <div style="background-color: #045c7a;height: 100px; margin-top: 10px; padding-top: 5px;">
+              <div
+                style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+                <img src="./media/EgpP6IyVgAAER1A.jpg" height="100%" width="100%" style="border-radius: 10px;" alt="">
+              </div>
+              <div
+                style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+                <img src="./media/knocksense_2022-12_505f78e9-6204-4f5c-a8f8-ceef3a4485bb_waterfall.jpg" height="100%"
+                  width="100%" style="border-radius: 10px;" alt="">
+              </div>
+              <div
+                style="background-color: blue;height: 75px; width: 25%; margin-top: 8px; margin-left: 25px; border-radius: 10px; float: left; ">
+                <img src="./media/pexels-photo-450441.jpeg" height="100%" width="100%" style="border-radius: 10px;"
+                  alt="">
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+        <hr style="margin-left: 11%;">
+        <div style="background-color: #045c7a; height: 230px;">
+          <div style="background-color: #045c7a;height: 230px; width: 55%; margin-left: 10%; float: left;">
+            <h2 style="margin-left: 23px; margin-top: 30px; font-size: 22px;">Subscribe our newsletter for more update &
+              news !!</h2>
+            <input type="text" placeholder="Enter Your Email"
+              style="height: 70px; font-size: 18px; padding-left: 40px; background-color: white; width: 55%; margin-left: 20px; margin-top: 20px; border-radius: 30px; border: none; ">
+            <button
+              style="padding: 25PX; background-color: rgba(255, 255, 255, 0); color: white; border: 2px solid white; border-radius: 30px; width: 20%; margin-left: 25px;">SUBSCRIBE</button>
+          </div>
+          <div style="background-color: #045c7a;height: 230px; width: 35%;  float: left;">
+  
+            <div style="height: 70px; background-color: #045c7a; float: right; width: 60%; margin-top: 50px;">
+              <div>
+                <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff; margin-left: 30px; "></i>
+                <i class="fa-brands fa-twitter fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+                <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+                <i class="fa-brands fa-youtube fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+                <i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff; margin-left: 10px;"></i>
+              </div>
+  
+              <div style="font-size: 20px; margin-top: 10px;">
+                <h5 style="float: left;">Privacy Policy | &nbsp; </h5>
+                <h5 style="float: left;">Term & Condition | &nbsp;</h5>
+                <h5 style="float: left;">FAQ</h5>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div style="background-color: #014a63; height: 70px; padding-top: 30px;">
+          <h2 style="text-align: center; margin-top: 10px;">Copyright © 2023 with locals. All rights reserved.</h2>
+        </div>
+  
+  
+      </div> -->
+  
+      <!-- footer end  -->
+    </div>
+</body>
+</html>
